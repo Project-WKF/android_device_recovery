@@ -1,6 +1,6 @@
 # Simple form to build recovery for devices #
 
-### List of Devices (8/10) ###
+### List of Devices (9/10) ###
 
 |        Device           |          Support                  |
 | :---------------------- | :-------------------------------- |
@@ -11,6 +11,7 @@ Samsung Galaxy A40 (a40)      | Yes (Working fine)
 Samsung Galaxy A30 (a30)      | Yes (Working fine)
 Samsung Galaxy A21s (a21s)    | Yes (Under development & Testing)
 Samsung Galaxy A20s (a20s)    | Yes (Under development & Testing)
+Samsung Galaxy A20e (a20e)    | Yes (Working fine)
 Samsung Galaxy A20 (a20)      | Yes (Working fine)
 
 ### Credits and thanks and stuff like that ###

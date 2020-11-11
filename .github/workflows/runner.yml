@@ -65,7 +65,7 @@ jobs:
          env:
               RECOVERY: OFR
               VERSION: "9.0"
-              DEVICE: a20
+              DEVICE: a20e
 
          run: |
                cd $RECOVERY/$VERSION/$DEVICE
