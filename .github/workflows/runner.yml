@@ -63,9 +63,9 @@ jobs:
               
        - name: Execute Shell Script
          env:
-              RECOVERY: TWRP
-              VERSION: "10.0"
-              DEVICE: f41
+              RECOVERY: OFR
+              VERSION: "9.0"
+              DEVICE: a20
 
          run: |
                cd $RECOVERY/$VERSION/$DEVICE
