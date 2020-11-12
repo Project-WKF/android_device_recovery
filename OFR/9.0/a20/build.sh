@@ -19,7 +19,7 @@ cd "$THIS_DIR/OrangeFox"
 
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
-if [ -f "$THIS_DIR/OrangeFox/out/target/product/a20/OrangeFox-R11.0-Beta-a20.zip" ]; then
+if [ -f "$THIS_DIR/OrangeFox/out/target/product/a20/OrangeFox-R11.0-Stable-a20.zip" ]; then
 ~/tmp/telegram -M "OrangeFox (R11.0) - A20 (a20)
 ***📦 Building completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds***"
    # Output
@@ -28,8 +28,8 @@ if [ -f "$THIS_DIR/OrangeFox/out/target/product/a20/OrangeFox-R11.0-Beta-a20.zip
 ⚙️ ***Device codename***: a20
 🎈 ***Output***: Recovery ZIP Flasheable
 
-📍 ***Tags***: #a20 #ofr #r11 #beta"
-~/tmp/telegram -f "$THIS_DIR/OrangeFox/out/target/product/a20/OrangeFox-R11.0-Beta-a20.zip" ""
+📍 ***Tags***: #a20 #ofr #r11 #stable"
+~/tmp/telegram -f "$THIS_DIR/OrangeFox/out/target/product/a20/OrangeFox-R11.0-Stable-a20.zip" ""
 
    # Output for: Image
 ~/tmp/telegram -M "📦 ***Recovery***: [OrangeFox](https://gitlab.com/OrangeFox) (R11.0)
@@ -37,7 +37,7 @@ if [ -f "$THIS_DIR/OrangeFox/out/target/product/a20/OrangeFox-R11.0-Beta-a20.zip
 ⚙️ ***Device codename***: a20
 🎈 ***Output***: Recovery Image
 
-📍 ***Tags***: #a20 #ofr #r11 #beta"
+📍 ***Tags***: #a20 #ofr #r11 #stable"
 ~/tmp/telegram -f "$THIS_DIR/OrangeFox/out/target/product/a20/recovery.img" ""
 else
    # Error in build
