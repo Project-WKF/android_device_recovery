@@ -63,9 +63,9 @@ jobs:
               
        - name: Execute Shell Script
          env:
-              RECOVERY: PBRP
-              VERSION: "10.0"
-              DEVICE: a21s
+              RECOVERY: OFR
+              VERSION: "9.0"
+              DEVICE: a20
 
          run: |
                cd $RECOVERY/$VERSION/$DEVICE
