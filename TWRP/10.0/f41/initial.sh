@@ -22,7 +22,7 @@ mkdir -p "$THIS_DIR/TWRP/"
 cd "$THIS_DIR/TWRP/"
 repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
 repo sync -c -q --force-sync --no-tags --no-clone-bundle --optimized-fetch --prune -j16
-git clone https://github.com/samsungexynos9810/android_device_samsung_f41 -b twrp-10 device/samsung/f41
+git clone https://github.com/Galaxy-F41/android_device_samsung_f41 -b twrp-10 device/samsung/f41
 
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
