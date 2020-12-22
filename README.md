@@ -1,9 +1,10 @@
 # Simple form to build recovery for devices #
 
-### List of Devices (9/10) ###
+### List of Devices (10/15) ###
 
 |        Device           |          Support                  |
 | :---------------------- | :-------------------------------- |
+Umidigi A7 Pro (A7_Pro)       | Yes (Working fine)
 Samsung Galaxy F41 (f41)      | Yes (Under development & Testing)
 Samsung Galaxy M30s (m30sdd)  | Yes (Working fine)
 Samsung Galaxy Note 10 Lite (r7)      | Yes (Under development & Testing)
