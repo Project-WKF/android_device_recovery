@@ -40,7 +40,7 @@ if [ -f "$THIS_DIR/TWRP/out/target/product/A7_Pro/recovery.img" ]; then
 ⚙️ ***Device codename***: A7_Pro
 🎈 ***Output***: Recovery Image
 
-📍 ***Tags***: #A7_Pro #twrp #10 #dynamic"
+📍 ***Tags***: #a7_pro #twrp #10 #dynamic"
 ~/tmp/telegram -f "$THIS_DIR/TWRP/out/target/product/A7_Pro/recovery.img" ""
 else
    # Error in build
