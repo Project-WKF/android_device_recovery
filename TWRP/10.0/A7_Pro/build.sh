@@ -8,7 +8,7 @@ distro=$(awk -F= '$1 == "ID" {print $2}' /etc/os-release)
 ~/tmp/telegram -M "⚒ ***Recovery***: [TWRP](https://github.com/TeamWin) (10.0)
 📱 ***Device***: Umidigi A7 Pro
 🖥 ***Machine Host***: $HOSTNAME (OS: $distro)
-⚙️ ***Device codename***: A7_Pro
+⚙️ ***Device codename***: 404
 
 📍 ***Note***: Building Recovery started"
 SYNC_START=$(date +"%s")
@@ -29,7 +29,7 @@ if [ -f "$THIS_DIR/TWRP/out/target/product/A7_Pro/recovery.img" ]; then
 ~/tmp/telegram -M "⚒ ***Recovery***: [TWRP](https://github.com/TeamWin) (10.0)
 📱 ***Device***: Umidigi A7 Pro
 🖥 ***Machine Host***: $HOSTNAME (OS: $distro)
-⚙️ ***Device codename***: A7_Pro
+⚙️ ***Device codename***: 404
 
 ✅ ***Note***: Building completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
 
@@ -37,7 +37,7 @@ if [ -f "$THIS_DIR/TWRP/out/target/product/A7_Pro/recovery.img" ]; then
    # Output for: Image
 ~/tmp/telegram -M "📦 ***Recovery***: [TWRP](https://github.com/TeamWin) (10.0)
 📱 ***Device***: Umidigi A7 Pro
-⚙️ ***Device codename***: A7_Pro
+⚙️ ***Device codename***: 404
 🎈 ***Output***: Recovery Image
 
 📍 ***Tags***: #a7_pro #twrp #10 #dynamic"
@@ -47,7 +47,7 @@ else
 ~/tmp/telegram -M "⚒ ***Recovery***: [TWRP](https://github.com/TeamWin) (10.0)
 📱 ***Device***: Umidigi A7 Pro
 🖥 ***Machine Host***: $HOSTNAME (OS: $distro)
-⚙️ ***Device codename***: A7_Pro
+⚙️ ***Device codename***: 404
 
 ❌ ***Note***: Building completed unsuccessfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
 fi

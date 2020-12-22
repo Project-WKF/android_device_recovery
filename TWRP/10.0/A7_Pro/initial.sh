@@ -8,7 +8,7 @@ distro=$(awk -F= '$1 == "ID" {print $2}' /etc/os-release)
 ~/tmp/telegram -M "⚒ ***Recovery***: [TWRP](https://github.com/TeamWin) (10.0)
 📱 ***Device***: Umidigi A7 Pro
 🖥 ***Machine Host***: $HOSTNAME (OS: $distro)
-⚙️ ***Device codename***: A7_Pro
+⚙️ ***Device codename***: 404
 
 📍 ***Note***: Sync started"
 SYNC_START=$(date +"%s")
@@ -30,6 +30,6 @@ SYNC_START=$(date +"%s")
 ~/tmp/telegram -M "⚒ ***Recovery***: [TWRP](https://github.com/TeamWin) (10.0)
 📱 ***Device***: Umidigi A7 Pro
 🖥 ***Machine Host***: $HOSTNAME (OS: $distro)
-⚙️ ***Device codename***: A7_Pro
+⚙️ ***Device codename***: 404
 
 📍 ***Note***: Sync completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
