@@ -22,7 +22,7 @@ mka recoveryimage
 
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
-if [ -f "$THIS_DIR/SHRP/out/target/product/a20s/SHRP_v3.1*" ]; then
+if [ -f "$THIS_DIR/SHRP/out/target/product/a20s/SHRP_v*.zip" ]; then
 ~/tmp/telegram -M "SHRP (v3.1) - A20s (a20s)
 ***📦 Building completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds***"
    # Output
@@ -32,7 +32,7 @@ if [ -f "$THIS_DIR/SHRP/out/target/product/a20s/SHRP_v3.1*" ]; then
 🎈 ***Output***: Recovery ZIP Flasheable
 
 📍 ***Tags***: #a20s #shrp #3.1 #stable"
-~/tmp/telegram -f "$THIS_DIR/OrangeFox/out/target/product/a20s/SHRP_v3.1*" ""
+~/tmp/telegram -f "$THIS_DIR/SHRP/out/target/product/a20s/SHRP_v*.zip" ""
 
    # Output for: Image
 ~/tmp/telegram -M "📦 ***Recovery***: [SHRP](https://github.com/SHRP) (3.1)
@@ -41,7 +41,7 @@ if [ -f "$THIS_DIR/SHRP/out/target/product/a20s/SHRP_v3.1*" ]; then
 🎈 ***Output***: Recovery Image
 
 📍 ***Tags***: #a20s #shrp #3.1 #stable"
-~/tmp/telegram -f "$THIS_DIR/OrangeFox/out/target/product/a20s/recovery.img" ""
+~/tmp/telegram -f "$THIS_DIR/SHRP/out/target/product/a20s/recovery.img" ""
 
   # Output for: Boot image
 ~/tmp/telegram -M "📦 ***Recovery***: [SHRP](https://github.com/SHRP) (3.1)
@@ -50,7 +50,7 @@ if [ -f "$THIS_DIR/SHRP/out/target/product/a20s/SHRP_v3.1*" ]; then
 🎈 ***Output***: Boot Image
 
 📍 ***Tags***: #a20s #shrp #3.1 #stable"
-~/tmp/telegram -f "$THIS_DIR/OrangeFox/out/target/product/a20s/boot.img" ""
+~/tmp/telegram -f "$THIS_DIR/SHRP/out/target/product/a20s/boot.img" ""
 else
    # Error in build
 ~/tmp/telegram -M "⚒ ***Recovery***: [SHRP](https://github.com/SHRP) (3.1)
