@@ -41,7 +41,7 @@ jobs:
 
        - name: Execute Shell Script
          env:
-              RECOVERY: TWRP
+              RECOVERY: SHRP
               VERSION: "10.0"
               DEVICE: a20s
 
