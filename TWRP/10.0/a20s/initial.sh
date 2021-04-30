@@ -23,6 +23,7 @@ cd "$THIS_DIR/TWRP/"
 repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
 repo sync -c -q --force-sync --no-tags --no-clone-bundle --optimized-fetch --prune -j16
 git clone https://github.com/a2XX-dev/android_device_samsung_a20s -b twrp-10.0 device/samsung/a20s
+git clone https://github.com/a2XX-dev/android_kernel_samsung_a20s -b sky kernel/samsung/a20s
 
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
