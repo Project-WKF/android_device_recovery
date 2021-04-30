@@ -43,20 +43,9 @@ jobs:
          env:
               RECOVERY: TWRP
               VERSION: "10.0"
-              DEVICE: m11q
+              DEVICE: a20s
 
          run: |
                cd $RECOVERY/$VERSION/$DEVICE
                chmod +x *.sh
                ./auto.sh
-         
-       - name: Release Builds
-         uses: "marvinpinto/action-automatic-releases@latest"
-         with:
-          repo_token: "${{ secrets.GHT }}"
-          automatic_release_tag: "latest"
-          prerelease: false
-          title: "Recovery Files"
-          files: |
-            $RECOVERY/out/target/product/$DEVICE/*.zip
-            $RECOVERY/out/target/product/$DEVICE/*.zip
