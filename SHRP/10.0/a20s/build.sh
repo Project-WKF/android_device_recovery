@@ -23,8 +23,13 @@ mka recoveryimage
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
 if [ -f "$THIS_DIR/SHRP/out/target/product/a20s/recovery.img" ]; then
-~/tmp/telegram -M "SHRP (v3.1) - A20s (a20s)
-***📦 Building completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds***"
+   # Output nice
+~/tmp/telegram -M "⚒ ***Recovery***: [SHRP](https://github.com/SHRP) (3.1)
+📱 ***Device***: Samsung Galaxy A20s
+🖥 ***Machine Host***: $HOSTNAME (OS: $distro)
+⚙️ ***Device codename***: a20s
+✅ ***Note***: Building completed successfully in $((SYNC_DIFF / 60)) minute(s) and $((SYNC_DIFF % 60)) seconds"
+
    # Output
 ~/tmp/telegram -M "📦 ***Recovery***: [SHRP](https://github.com/SHRP) (3.1)
 📱 ***Device***: Samsung Galaxy A20s
@@ -32,7 +37,8 @@ if [ -f "$THIS_DIR/SHRP/out/target/product/a20s/recovery.img" ]; then
 🎈 ***Output***: Recovery ZIP Flasheable
 
 📍 ***Tags***: #a20s #shrp #3.1 #stable"
-~/tmp/telegram -f "$THIS_DIR/SHRP/out/target/product/a20s/*a20s*.zip" ""
+
+~/tmp/telegram -f "$THIS_DIR/SHRP/out/target/product/a20s/SHRP_v3.1_stable-Official_a20s-*.zip" ""
 
    # Output for: Image
 ~/tmp/telegram -M "📦 ***Recovery***: [SHRP](https://github.com/SHRP) (3.1)
@@ -42,15 +48,6 @@ if [ -f "$THIS_DIR/SHRP/out/target/product/a20s/recovery.img" ]; then
 
 📍 ***Tags***: #a20s #shrp #3.1 #stable"
 ~/tmp/telegram -f "$THIS_DIR/SHRP/out/target/product/a20s/recovery.img" ""
-
-  # Output for: Boot image
-~/tmp/telegram -M "📦 ***Recovery***: [SHRP](https://github.com/SHRP) (3.1)
-📱 ***Device***: Samsung Galaxy A20s
-⚙️ ***Device codename***: a20s
-🎈 ***Output***: Boot Image
-
-📍 ***Tags***: #a20s #shrp #3.1 #stable"
-~/tmp/telegram -f "$THIS_DIR/SHRP/out/target/product/a20s/boot.img" ""
 else
    # Error in build
 ~/tmp/telegram -M "⚒ ***Recovery***: [SHRP](https://github.com/SHRP) (3.1)
