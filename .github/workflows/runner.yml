@@ -41,9 +41,9 @@ jobs:
 
        - name: Execute Shell Script
          env:
-              RECOVERY: SHRP
+              RECOVERY: TWRP
               VERSION: "10.0"
-              DEVICE: a20s
+              DEVICE: a52q
 
          run: |
                cd $RECOVERY/$VERSION/$DEVICE
