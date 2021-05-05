@@ -46,6 +46,8 @@ jobs:
               DEVICE: a52q
 
          run: |
+               sudo apt update -y
+               sudo apt-get install ccache -y
                export CCACHE_EXEC="$(which ccache)"
                export CCACHE="${CCACHE_EXEC}"
                export CCACHE_COMPRESS="1"
@@ -53,4 +55,7 @@ jobs:
                ccache -M 50G
                cd $RECOVERY/$VERSION/$DEVICE
                chmod +x *.sh
-               ./auto.sh && echo a
+               ./auto.sh
+               rm -rf TWRP
+               cd ../a72q
+               ./auto.sh
