@@ -22,7 +22,7 @@ mkdir -p "$THIS_DIR/TWRP/"
 cd "$THIS_DIR/TWRP/"
 repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
 repo sync -c -q --force-sync --no-tags --no-clone-bundle --optimized-fetch --prune -j16
-git clone https://github.com/Velosh/android_device_samsung_a52q -b twrp-10.0 device/samsung/a52q
+git clone https://github.com/Samsung-SM7215/android_device_samsung_a52q -b twrp-10.0 device/samsung/a52q
 git clone https://github.com/TeamWin/android_device_qcom_twrp-common -b android-10 device/qcom/twrp-common
 
 SYNC_END=$(date +"%s")

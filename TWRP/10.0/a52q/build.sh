@@ -40,8 +40,9 @@ if [ -f "$THIS_DIR/TWRP/out/target/product/a52q/recovery.img" ]; then
 ⚙️ ***Device codename***: a52q
 🎈 ***Output***: Recovery Image
 
-📍 ***Tags***: #a52q #twrp #10"
-~/tmp/telegram -f "$THIS_DIR/TWRP/out/target/product/a52q/recovery.img" ""
+📍 ***Tags***: #a52q #twrp #11"
+zip "$THIS/TWRP/out/target/product/a52q/recovery/recovery.img.zip" "$THIS_DIR/TWRP/out/target/product/a52q/recovery.img"
+~/tmp/telegram -f "$THIS_DIR/TWRP/out/target/product/a52q/recovery.img.zip" ""
 else
    # Error in build
 ~/tmp/telegram -M "⚒ ***Recovery***: [TWRP](https://github.com/TeamWin) (10.0)

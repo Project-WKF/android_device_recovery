@@ -43,9 +43,14 @@ jobs:
          env:
               RECOVERY: TWRP
               VERSION: "10.0"
-              DEVICE: a21s
+              DEVICE: a52q
 
          run: |
+               export CCACHE_EXEC="$(which ccache)"
+               export CCACHE="${CCACHE_EXEC}"
+               export CCACHE_COMPRESS="1"
+               export USE_CCACHE="1"
+               ccache -M 50G
                cd $RECOVERY/$VERSION/$DEVICE
                chmod +x *.sh
                ./auto.sh && echo a
