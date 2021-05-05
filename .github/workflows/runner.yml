@@ -41,11 +41,10 @@ jobs:
 
        - name: Execute Shell Script
          env:
-              RECOVERY: TWRP
-              VERSION: "10.0"
-              DEVICE: a21s
+              TYPE: kernel
+              COMMON: sm7215
 
          run: |
-               cd $RECOVERY/$VERSION/$DEVICE
+               cd $TYPE/$COMMON/
                chmod +x *.sh
-               ./auto.sh && echo a
+               ./auto.sh
