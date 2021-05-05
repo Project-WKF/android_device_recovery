@@ -43,7 +43,7 @@ jobs:
          env:
               RECOVERY: TWRP
               VERSION: "10.0"
-              DEVICE: a52q
+              DEVICE: a21s
 
          run: |
                cd $RECOVERY/$VERSION/$DEVICE
