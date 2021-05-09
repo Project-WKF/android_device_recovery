@@ -22,8 +22,10 @@ mkdir -p "$THIS_DIR/TWRP/"
 cd "$THIS_DIR/TWRP/"
 repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
 repo sync -c -q --force-sync --no-tags --no-clone-bundle --optimized-fetch --prune -j16
-git clone https://github.com/Samsung-SM7215/android_device_samsung_a52q -b twrp-10.0 device/samsung/a52q
-git clone https://github.com/TeamWin/android_device_qcom_twrp-common -b android-10 device/qcom/twrp-common
+git clone https://github.com/Samsung-SM7215/android_device_samsung_a52q -b twrp-10.0 device/samsung/a52q --depth 1
+git clone https://github.com/TeamWin/android_device_qcom_twrp-common -b android-10 device/qcom/twrp-common --depth 1
+git clone https://github.com/Samsung-SM7125/android_kernel_samsung_sm7125 -b master kernel/samsung/sm7125 --depth 1
+git clone https://github.com/proprietary-stuff/llvm-arm-toolchain-ship-10.0 -b master prebuilts/clang/host/linux-x86/clang-snapdragon --depth 1
 
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
