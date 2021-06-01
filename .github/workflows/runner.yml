@@ -42,7 +42,7 @@ jobs:
        - name: Execute Shell Script
          env:
               TYPE: kernel
-              COMMON: a31
+              COMMON: sm6250
 
          run: |
                cd $TYPE/$COMMON/
